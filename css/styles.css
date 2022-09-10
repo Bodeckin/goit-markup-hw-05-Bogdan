@@ -17,8 +17,6 @@
 .site-nav {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .main-nav {
@@ -45,8 +43,6 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
 }
 
@@ -186,6 +182,8 @@ body {
   gap: 8px;
 }
 
+
+
 .menu-images {
   display: flex;
   flex-wrap: wrap;
@@ -265,6 +263,23 @@ li {
   color: var(--main-light-color);
 }
 
+.link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.link.caren-studio::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--current-color);
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+}
 /* hover focus ссилок */
 
 .link:hover,
