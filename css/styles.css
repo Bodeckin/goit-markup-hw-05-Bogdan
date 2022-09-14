@@ -133,6 +133,7 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition-property: var(--transition-duration-function);
 }
 .icon-mail {
   margin-right: 10px;
@@ -266,8 +267,7 @@ li {
 .filtr-btns:focus {
   background-color: var(--current-color);
   color: var(--main-light-color);
-  transition: var(--transition-duration-function);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button:hover,
@@ -411,9 +411,6 @@ li {
 
 .hero-button {
   border-radius: 4px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -423,7 +420,7 @@ li {
   border: none;
   width: 216px;
   height: 50px;
-  transition: color var(--transition-duration-function);
+  transition: background-color var(--transition-duration-function);
 }
 
 .hero-button:hover,
@@ -489,7 +486,7 @@ li {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: #AFB1B8;
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -503,8 +500,9 @@ li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
-  transition: var(--transition-duration-function);
+  background-color: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+  transition-property: var(--transition-duration-function);
 }
 
 .social-list-link:hover,
@@ -603,6 +601,7 @@ li {
   padding: 6px 22px;
   border: none;
   height: 38px;
+  transition: var(--transition-duration-function);
 }
 
 .foto-work {
@@ -631,13 +630,11 @@ li {
 }
 
 .address {
+  text-decoration: none;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1,71;
   letter-spacing: 0.03em;
 }
 /* ховаєм підкреслювання ссилок */
@@ -661,7 +658,7 @@ li {
   width: 170px;
   height: 92px;
   color: #afb1b8;
-  transition: var(--transition-duration-function);
+  transition: color var(--transition-duration-function), border var(--transition-duration-function);
 }
 
 .list-link-clients:hover,
@@ -704,13 +701,7 @@ li {
   align-items: baseline;
 }
 
-.address {
-  text-decoration: none;
-}
 
-.social-list-link {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 .header .link:hover .header-mail,
 .header .link:focus .header-mail,
@@ -720,7 +711,7 @@ li {
 }
 
 .footer .social-list-icon {
-  color: var(--main-light-color);
+  fill: var(--main-light-color);
 }
 .portfolio-list-link {
   display: block;
@@ -744,11 +735,8 @@ li {
 }
 
 .overlay {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1,56;
   letter-spacing: 0.03em;
   position: absolute;
   top: 0;
