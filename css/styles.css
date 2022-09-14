@@ -114,6 +114,7 @@ body {
 }
 
 .header-web {
+  text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
@@ -554,6 +555,7 @@ li {
 }
 
 .footer-web {
+  text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
