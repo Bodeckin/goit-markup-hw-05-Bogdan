@@ -752,7 +752,7 @@ li {
   color: var(--main-light-color);
   padding: 63px 24px;
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: var(--transition-duration-function);
 }
 
